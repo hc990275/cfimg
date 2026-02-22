@@ -2,8 +2,8 @@
 
 这是一款基于 **Cloudflare Workers** 和全球最大免费图床平台 **Imgbb** 构建的无服务器、抗白嫖、全本地画廊管理的极简私人图床系统。
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME)
-*(提示：使用一键部署前，请先将本项目 Fork 到您自己的 GitHub 账号下，并把上面 \`YOUR_GITHUB_USERNAME\` 换成您的名字！)*
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/hc990275/cfimg)
+*(提示：本项目支持直接点击上方按钮将代码一键拉取并全自动部署到您的 Cloudflare Workers！您无需手动复制代码即可享用。)*
 
 ---
 
@@ -60,5 +60,4 @@
 > **A**：因为这是一个极限追求轻量化、不强制要求你搭装任何数据库后端的系统。为了让你不配设繁琐的 KV 库也能有图看，目前的机制是将你在那个电脑浏览网页成功后的图片履历暂驻（LocalStorage）在你的当前浏览器中。**不用担心**，图片本身都还在远端（Imgbb 服务器）躺得好好的，只是您这部电脑"忘记了"。想重览请登录 Imgbb 官网查账即可。
 
 **Q：怎么才能使用那个 GitHub 蓝色的一键部署按钮？**
-> **A**：那个小按键是 CF 官方出的捷径。要把这串大洋葱换成你自己的，你需要：
-先 Fork 本库，然后在这个 README 最顶上，把 `https://deploy.workers.cloudflare.com/?url=https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME` 的这一堆英文改成你 Fork 过去的属于你自己的库地址。当别的朋友点这个键，Cloudflare 就会自动帮他走完第二大步！
+> **A**：那个小按键是 CF 官方出的捷径。只要您（或者其他网友）拥有 Cloudflare 账号，点击 README 最顶上的那个蓝色的 `Deploy to Cloudflare Workers` 按钮，Cloudflare 就会自动帮他拉取 `hc990275/cfimg` 这个仓库的最新代码并直接进入第二大步的命名与部署环节，彻底免去手动复制粘贴代码的繁琐！
